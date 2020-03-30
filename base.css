@@ -8,7 +8,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 html {
-    line-height: 1
+    line-height: 1;
+    scroll-behavior: smooth;
 }
 
 ol,ul {
@@ -383,6 +384,8 @@ p {
   .menu-item-description:hover{
         color: white;
         background: #0067D2;
+        cursor: pointer;
+        transition: 0.7s;
     }
 .profile {
     font-size: .875em;
@@ -523,6 +526,7 @@ p {
 .header-github:hover{
     color: #A30020;
     background: white;
+    transition: 0.7s;
 }
 
 .summary-distance {
@@ -773,11 +777,12 @@ p {
 }
 
 .profile-description p {
-    font-size: 1.57143em;
+    font-size: 20px;
     line-height: 1.45455em;
     font-weight: 300;
     margin: 0 auto;
     margin-bottom: 30px;
+
 }
 
 .menu-navigation {
@@ -787,9 +792,14 @@ p {
 }
 
 .menu-navigation-list {
-    margin: 0 auto
+    margin: 0 auto;
+    font-size: 20px;
 }
 
+.anchor-img{
+    width: 12px;
+    height: 20px;
+}
 .menu-navigation-list-item {
     font-size: 1.14286em;
     line-height: 1.5em;
@@ -798,6 +808,7 @@ p {
     position: relative;
     color: #0067D2;
     text-decoration: underline;
+    margin-right: 30px;
 }
 
 .menu-navigation-list-item:hover {
@@ -934,6 +945,11 @@ p {
     opacity: .7;
     
 }
+/* .menu-item-image:before,.menu-item-image img {
+    opacity: .7;
+    
+} */
+
 
 /* .thumbnail-container{
     position: relative;
@@ -943,6 +959,7 @@ p {
     top: 8px;
     left: 16px;
     visibility: hidden;
+    font-family: 'Hiragino Kaku Gothic W3 JIS2004';
 }
 
 .menu-item-image:before {
@@ -1334,8 +1351,9 @@ p {
 
     .profile-logo-image {
         float: none;
-        margin-top: .07143em;
-        margin-bottom: 1.21429em
+        /* margin-top: .07143em;
+        margin-bottom: 1.21429em; */
+        margin-top: -10px;
     }
 
     .profile-name {
@@ -1461,6 +1479,8 @@ p {
         padding: 15px 0px 15px 20px;
         background-color: #EDF3FA;
         text-align: center;
+        font-size: 16px;
+        white-space: nowrap;
     }
 
     .menu-navigation-list-item {
@@ -1468,7 +1488,12 @@ p {
         line-height: 1.57143em;
         margin-right: 30px;
     }
+    .anchor-img {
 
+        width: 10px;
+        height: 13px;
+    
+    }
     .menu-category:first-of-type:only-child:before {
         top: 0;
     }
@@ -1499,9 +1524,10 @@ p {
     .has-images .menu-item:nth-child(-n+3) {
 
         margin-top: 1.21429em;
-        box-shadow: 3px 6px #0000001D;  
+        box-shadow: 3px 3px 5px 3px #ccc;  
         height: auto;
          background: white;
+         border-radius: 3px;
     
     }
     .menu-item-image:before {
@@ -1588,7 +1614,7 @@ p {
     }
     .has-images .menu-item-description,.has-images .business-info-address,.has-images .business-bio {
         height: auto;
-        margin-right: 14px;
+        margin-right: 8px;
         border: 1px solid#0067D2;
         border-radius: 3px;
         padding: 5px 17px 5px 17px;
@@ -2020,9 +2046,10 @@ p {
 
     .has-images .menu-item:nth-child(-n+2) {
         margin-top: 1.21429em;
-        box-shadow: 3px 6px#0000001D;
+        box-shadow: 3px 3px 5px 3px #ccc;
         height: 202px;
         background:white;
+        border-radius: 3px;
     }
 
     .menu-item-image:before {
@@ -2440,11 +2467,12 @@ p {
         box-shadow: 3px 6px #0000001D;
         /* height: 257px; */
         background:white;
+        border-radius: 3px;
     
     }
     .has-images .menu-item:nth-child(-n+2) {
         margin-top: 1.21429em;
-        box-shadow: 3px 6px #0000001D;
+        box-shadow: 3px 3px 5px 3px #ccc;
         height: 275px;
         background: white;
     }
@@ -2793,9 +2821,10 @@ p {
 
     .has-images .menu-item:nth-child(-n+3) {
         margin-top: 1.21429em;
-        box-shadow: 3px 6px #0000001D;
+        box-shadow: 3px 3px 5px 3px #ccc;
         height: 227px;
         background: white;
+        border-radius: 3px;
         
 
     }
@@ -2926,6 +2955,15 @@ p {
         border-radius: 3px;
         padding: 5px;
         color:#0067D2;    }
+
+        .menu-item-description:hover {
+
+            color: white;
+            background: 
+        
+            #0067D2;
+        
+        }
     .info {
 
         display: flex;
@@ -3032,6 +3070,7 @@ p {
         position:relative;
         display:inline-block;
         margin:20px;
+        width: 48%;
       }
       
       .contact-btn a{
@@ -3274,6 +3313,7 @@ p {
         background: #ECF3FA;
         padding: 10px 3px 10px 30px;
         max-width: 868px;
+        margin-bottom: 40px;
     }
 
     .arrow-down {
@@ -3293,11 +3333,12 @@ p {
         box-shadow: 3px 6px #0000001D;
     height: 290px;
     background: white;
+    border-radius: 3px;
     }
 
     .has-images .menu-item:nth-child(-n+3) {
         margin-top: 1.21429em;
-        box-shadow:  3px 6px #0000001D;
+        box-shadow:  3px 3px 5px 3px #ccc;
         height: 256px;
         background: white;
     }
@@ -3342,7 +3383,7 @@ p {
     .android-sub{
         font-weight: bold;
         margin-left: 12px;
-        margin-top: 12px;
+        margin-top: 7px;
     }
     .info {
         display: flex;
@@ -3356,11 +3397,13 @@ p {
         border-radius: 3px;
         padding: 5px;
         color: #0067D2;
+        flex: 0 0 auto;
     }
 
     .menu-item-description:hover{
         color: white;
         background: #0067D2;
+        cursor: pointer;
     }
     .top-header{
         max-width: 868px;
